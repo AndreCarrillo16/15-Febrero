@@ -20,7 +20,7 @@ C = vpa(CC)
 
 %% Problema 4
 
-syms a b c
+syms a b c x y 
 eqn = 2*x-3*c*y;
 eqn2 = c*x+2*y;
 D1 = subs(eqn, c, 2);
@@ -31,6 +31,7 @@ DY=D.y
 
 %% Problema 5
 
+syms a b c x y 
 eqn = 3*x^2-2*x+y;
 eqn2 = x*y+x;
 E = solve([eqn==7,eqn2==5], [x,y]);
